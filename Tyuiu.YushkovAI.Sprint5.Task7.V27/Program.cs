@@ -13,7 +13,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Добавление итоговых проектов по спринту                           *");
+            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
             Console.WriteLine("* Задание #7                                                              *");
             Console.WriteLine("* Вариант #27                                                             *");
             Console.WriteLine("* Выполнил: Юшков Антон Ильич | ПКТб-26-1                                 *");
@@ -28,7 +28,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27
 
             string folder = @"C:\DataSprint5";
             string path = Path.Combine(folder, "InPutDataFileTask7V27.txt");
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Входной файл: {path}");
             if (!File.Exists(path))
             {
                 Console.WriteLine("Поместите входной файл из архива в указанную папку.");
@@ -40,6 +40,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27
             Console.WriteLine("***************************************************************************");
 
             string result = ds.LoadDataAndSave(path);
+            Console.WriteLine("Текст после удаления групп пробелов:");
             Console.WriteLine(result);
         }
     }

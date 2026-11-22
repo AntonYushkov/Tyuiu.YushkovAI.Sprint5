@@ -36,7 +36,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task3.V26
             string path = ds.SaveToFileTextData(x);
             using BinaryReader reader = new BinaryReader(File.OpenRead(path));
             Console.WriteLine(reader.ReadDouble());
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Файл находится по пути: {path}");
         }
     }
 }

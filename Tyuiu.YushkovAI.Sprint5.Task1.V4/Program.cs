@@ -42,7 +42,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task1.V4
             {
                 Console.WriteLine($"{startValue + i,4} | {double.Parse(values[i]),7:F2}");
             }
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Файл находится по пути: {path}");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task2.V22
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Класс File. Запись структурированных данных                       *");
+            Console.WriteLine("* Тема: Класс File. Запись структурированных данных в текстовый файл      *");
             Console.WriteLine("* Задание #2                                                              *");
             Console.WriteLine("* Вариант #22                                                             *");
             Console.WriteLine("* Выполнил: Юшков Антон Ильич | ПКТб-26-1                                 *");
@@ -42,7 +42,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task2.V22
 
             string path = ds.SaveToFileTextData(matrix);
             Console.Write(File.ReadAllText(path));
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Файл находится по пути: {path}");
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task5.V14
 
             string folder = @"C:\DataSprint5";
             string path = Path.Combine(folder, "InPutDataFileTask5V14.txt");
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Входной файл: {path}");
             if (!File.Exists(path))
             {
                 Console.WriteLine("Поместите входной файл из архива в указанную папку.");

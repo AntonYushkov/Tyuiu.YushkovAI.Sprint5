@@ -32,7 +32,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task4.V25
             {
                 path = Path.Combine(folder, "InPutDataFileTask4V0.txt");
             }
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Входной файл: {path}");
             if (!File.Exists(path))
             {
                 Console.WriteLine("Поместите входной файл из архива в указанную папку.");

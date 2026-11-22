@@ -35,7 +35,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task0.V13
 
             string path = ds.SaveToFileTextData(x);
             Console.WriteLine(File.ReadAllText(path));
-            Console.WriteLine($"Файл: {path}");
+            Console.WriteLine($"Файл находится по пути: {path}");
         }
     }
 }
