@@ -42,6 +42,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27
             string result = ds.LoadDataAndSave(path);
             Console.WriteLine("Текст после удаления групп пробелов:");
             Console.WriteLine(result);
+            Console.WriteLine($"Файл находится по пути: {DataService.GetOutputPath()}");
         }
     }
 }

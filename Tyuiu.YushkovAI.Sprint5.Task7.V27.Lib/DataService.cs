@@ -5,6 +5,11 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27.Lib
 {
     public class DataService : ISprint5Task7V27
     {
+        public static string GetOutputPath()
+        {
+            return Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V27.txt");
+        }
+
         public string LoadDataAndSave(string path)
         {
             string text = File.ReadAllText(path);
@@ -23,7 +28,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27.Lib
             }
 
             string output = result.ToString();
-            string outputPath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V27.txt");
+            string outputPath = GetOutputPath();
             File.WriteAllText(outputPath, output);
             return output;
         }
