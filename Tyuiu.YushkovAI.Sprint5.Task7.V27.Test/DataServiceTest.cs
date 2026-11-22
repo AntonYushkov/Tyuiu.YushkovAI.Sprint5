@@ -15,8 +15,10 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27.Test
             try
             {
                 File.WriteAllText(path, "А  Б В   Г\nД    Е");
-                string outputPath = ds.LoadDataAndSave(path);
-                Assert.AreEqual("А Б В Г\nД Е", File.ReadAllText(outputPath));
+                string result = ds.LoadDataAndSave(path);
+                string outputPath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V27.txt");
+                Assert.AreEqual("А Б В Г\nД Е", result);
+                Assert.AreEqual(result, File.ReadAllText(outputPath));
             }
             finally
             {

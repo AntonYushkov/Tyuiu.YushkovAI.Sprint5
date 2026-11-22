@@ -14,7 +14,7 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27.Lib
 
             string outputPath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V27.txt");
             File.WriteAllText(outputPath, text);
-            return outputPath;
+            return text;
         }
     }
 }

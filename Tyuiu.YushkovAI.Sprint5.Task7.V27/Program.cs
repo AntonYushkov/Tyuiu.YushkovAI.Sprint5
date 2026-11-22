@@ -39,9 +39,8 @@ namespace Tyuiu.YushkovAI.Sprint5.Task7.V27
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string outputPath = ds.LoadDataAndSave(path);
-            Console.WriteLine(File.ReadAllText(outputPath));
-            Console.WriteLine($"Файл: {outputPath}");
+            string result = ds.LoadDataAndSave(path);
+            Console.WriteLine(result);
         }
     }
 }
